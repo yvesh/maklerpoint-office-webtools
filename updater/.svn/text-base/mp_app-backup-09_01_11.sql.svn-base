@@ -1,0 +1,325 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.2.4
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost:3306
+-- Erstellungszeit: 09. Januar 2011 um 12:31
+-- Server Version: 5.0.51
+-- PHP-Version: 5.2.6
+-- 
+-- Datenbank: `mp_app`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `reportex`
+-- 
+
+CREATE TABLE IF NOT EXISTS `reportex` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `environment` text,
+  `databaselog` text,
+  `log` text,
+  `pluginlog` text,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+-- 
+-- Daten für Tabelle `reportex`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `reportex_bp`
+-- 
+
+CREATE TABLE IF NOT EXISTS `reportex_bp` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `environment` text,
+  `databaselog` text,
+  `log` text,
+  `pluginlog` text,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Daten für Tabelle `reportex_bp`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `reportex_web`
+-- 
+
+CREATE TABLE IF NOT EXISTS `reportex_web` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `environment` text,
+  `databaselog` text,
+  `log` text,
+  `pluginlog` text,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Daten für Tabelle `reportex_web`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `updatecheck`
+-- 
+
+CREATE TABLE IF NOT EXISTS `updatecheck` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8 AUTO_INCREMENT=44 ;
+
+-- 
+-- Daten für Tabelle `updatecheck`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `updatecheck_bp`
+-- 
+
+CREATE TABLE IF NOT EXISTS `updatecheck_bp` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+-- 
+-- Daten für Tabelle `updatecheck_bp`
+-- 
+
+INSERT INTO `updatecheck_bp` (`id`, `version`, `build`, `serialhash`, `os`, `osname`, `osarch`, `osversion`, `vmvendor`, `vmversion`, `username`, `userdir`, `ip`, `hostaddress`, `useragent`, `referred`, `created`) VALUES (1, '', '', '', 0, '', '', '', '', '', '', '', '92.229.14.2', 'g229014002.adsl.alicedsl.de', 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.13) Gecko/20100916 Iceweasel/3.5.13 (like Firefox/3.5.13)', '', '2010-10-15 19:14:59'),
+(2, '', '', '', 0, '', '', '', '', '', '', '', '92.229.14.2', 'g229014002.adsl.alicedsl.de', 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.13) Gecko/20100916 Iceweasel/3.5.13 (like Firefox/3.5.13)', '', '2010-10-15 19:15:31');
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `updatecheck_web`
+-- 
+
+CREATE TABLE IF NOT EXISTS `updatecheck_web` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Daten für Tabelle `updatecheck_web`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `uploadlog`
+-- 
+
+CREATE TABLE IF NOT EXISTS `uploadlog` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `environment` text,
+  `databaselog` text,
+  `log` text,
+  `pluginlog` text,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+
+-- 
+-- Daten für Tabelle `uploadlog`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `uploadlog_bp`
+-- 
+
+CREATE TABLE IF NOT EXISTS `uploadlog_bp` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `environment` text,
+  `databaselog` text,
+  `log` text,
+  `pluginlog` text,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Daten für Tabelle `uploadlog_bp`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Tabellenstruktur für Tabelle `uploadlog_web`
+-- 
+
+CREATE TABLE IF NOT EXISTS `uploadlog_web` (
+  `id` int(11) NOT NULL auto_increment,
+  `version` varchar(300) default NULL,
+  `build` varchar(300) default NULL,
+  `serialhash` varchar(300) default NULL,
+  `os` int(11) NOT NULL default '-1',
+  `osname` varchar(1000) default NULL,
+  `osarch` varchar(250) default NULL,
+  `osversion` varchar(1000) default NULL,
+  `vmvendor` varchar(1000) default NULL,
+  `vmversion` varchar(1000) default NULL,
+  `username` varchar(1000) NOT NULL,
+  `userdir` text NOT NULL,
+  `ip` varchar(100) NOT NULL,
+  `hostaddress` varchar(1000) NOT NULL,
+  `useragent` varchar(1000) NOT NULL,
+  `referred` varchar(1000) NOT NULL,
+  `environment` text,
+  `databaselog` text,
+  `log` text,
+  `pluginlog` text,
+  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- Daten für Tabelle `uploadlog_web`
+-- 
+

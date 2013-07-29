@@ -1,0 +1,25 @@
+/* Copyright (C) 2009 - 2010 MaklerPoint Software - Yves Hoppe
+ * http://www.maklerpoint.de
+ */
+
+body {
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+        font-size: 13px;
+}
+
+a { color: #069; text-decoration: none; }
+a:hover, a:active, a:focus { text-decoration: underline; color: #333; }
+
+input, select, textarea, .inputbox {
+	padding: 2px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.inputbox { border: 1px solid #ccc; background: #fff; }
+
+.inputbox:hover, .inputbox:focus { background: #ffffcc; }
+
+#poweredby {display: none;}
+
+#mw-modern {background: url(../images/bg-mw-mod.png) no-repeat; width: 290px; height: 180px; padding: 35px 8px 0px 10px; color: #fff;}
